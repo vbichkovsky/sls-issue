@@ -1,0 +1,19 @@
+{
+  "name": "sls-issue",
+  "version": "1.0.0",
+  "description": "Sample project to showcase the issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentin",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^2.8.0",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.780.0"
+  }
+}

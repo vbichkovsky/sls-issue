@@ -1,0 +1,21 @@
+service: issue
+frameworkVersion: '2'
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: prod
+  region: eu-west-1
+  memorySize: 256
+  timeout: 10
+
+functions:
+  hello:
+    handler: index.hello
+    events:
+      - http:
+          path: /
+          method: get
